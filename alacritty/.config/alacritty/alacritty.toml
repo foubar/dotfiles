@@ -1,0 +1,17 @@
+
+[colors.primary]
+background = "#000000"
+foreground = "#00FF00"
+
+[font]
+normal = { family = "UbuntuSansMono Nerd Font", style = "" }
+size = 12
+
+[scrolling]
+multiplier = 3
+
+[window]
+opacity = 0.90
+startup_mode = "Maximized"
+
+

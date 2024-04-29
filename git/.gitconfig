@@ -1,0 +1,46 @@
+[alias]
+    amend    = commit --amend --reuse-message=HEAD
+    branches = branch -a
+    c        = clone --recursive
+    d        = diff
+    ds       = diff --staged
+    l        = log
+    lg       = log --decorate --all --oneline --graph
+    remotes  = remote -v
+    s        = status
+    ss       = status -s
+    tags     = tag -l
+
+[color]
+    ui = auto
+
+[diff]
+    algorithm = minimal
+    renames = copies
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+
+[init]
+    defaultBranch = main
+
+[merge]
+    log = true
+    tool = meld
+[mergetool]
+    prompt = false
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+
+[include]
+    path = ~/.gitconfig.local
+
+
