@@ -14,6 +14,9 @@
 [color]
     ui = auto
 
+[core]
+    editor = nvim
+
 [diff]
     algorithm = minimal
     renames = copies
