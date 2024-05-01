@@ -1,15 +1,21 @@
 [global_config]
   window_state = maximise
-  title_hide_sizetext = True
+  borderless = True
+  tab_position = hidden
+  title_use_system_font = False
+  title_font = UbuntuSansMono Nerd Font 11
+  line_height = 1.1
 [keybindings]
   help = <Primary>F1
 [profiles]
   [[default]]
-    background_darkness = 0.90
+    background_darkness = 0.9
     background_type = transparent
+    cursor_shape = underline
     cursor_color = "#aaaaaa"
-    font = UbuntuSansMono Nerd Font 12
+    font = UbuntuSansMono Nerd Font 11
     foreground_color = "#00ff00"
+    show_titlebar = False
     scrollback_lines = 1000000
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     use_system_font = False
@@ -21,4 +27,5 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = default
 [plugins]
