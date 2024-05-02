@@ -9,5 +9,3 @@ git checkout -f 61968497add34548bc1ba6ba3516f813303d8391
 make
 
 make install PREFIX=~/.local
-
-

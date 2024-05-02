@@ -21,8 +21,10 @@
     algorithm = minimal
     renames = copies
     tool = meld
+
 [difftool]
     prompt = false
+
 [difftool "meld"]
     cmd = meld "$LOCAL" "$REMOTE"
 
@@ -38,12 +40,12 @@
 [merge]
     log = true
     tool = meld
+
 [mergetool]
     prompt = false
+
 [mergetool "meld"]
     cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
 
 [include]
     path = ~/.gitconfig.local
-
-

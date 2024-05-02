@@ -47,5 +47,3 @@ if [ -f ~/.bash_aliases.local ]
 then
     source ~/.bash_aliases.local
 fi
-
-

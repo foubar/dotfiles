@@ -3,5 +3,3 @@ if [ -f ~/.bash_env.local ]
 then
     source ~/.bash_env.local
 fi
-
-

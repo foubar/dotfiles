@@ -135,5 +135,3 @@ then
 #        bleopt prompt_rps1_final="$(starship module time)"
 #    fi
 fi
-
-

@@ -17,5 +17,3 @@ then
     make CMAKE_BUILD_TYPE=Release CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=~/.local"
     make install
 fi
-
-
