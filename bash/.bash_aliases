@@ -25,9 +25,14 @@ alias l='git log'
 alias la='ls -A --color=auto'
 alias lg='git log --decorate --all --oneline --graph'
 alias ll='ls -Flisa --color=auto'
+alias lock='gnome-screensaver-command --lock'
 alias ls='ls --color=auto'
 alias lt='ls -Flisatr --color=auto'
 alias ltr='ls -Flisat --color=auto'
+
+alias m='gnome-screensaver-command --lock'
+
+alias nvim='~/.local/bin/run-neovim.sh'
 
 alias p='ps faux'
 
@@ -40,8 +45,8 @@ alias s='git status'
 alias screen='mkdir -pv "${HOME}/screen/$(date "+%Y-%m")" && screen -Logfile "${HOME}/screen/$(date "+%Y-%m")/$(date "+%Y-%m-%d %H:%M:%S") screen.log"'
 alias sudo='sudo -k'
 
-alias vi='nvim'
-alias vim='nvim'
+alias vi='~/.local/bin/run-neovim.sh'
+alias vim='~/.local/bin/run-neovim.sh'
 
 if [ -f ~/.bash_aliases.local ]
 then

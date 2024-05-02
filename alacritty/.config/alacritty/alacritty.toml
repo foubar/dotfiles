@@ -1,11 +1,15 @@
-
 [colors.primary]
 background = "#000000"
 foreground = "#00FF00"
 
+[cursor]
+style = { shape = "Underline", blinking = "On" }
+unfocused_hollow = false
+
 [font]
 normal = { family = "UbuntuSansMono Nerd Font", style = "" }
-size = 12
+offset = { x = 0, y = 1 }
+size = 11
 
 [scrolling]
 multiplier = 3
