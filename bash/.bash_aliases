@@ -21,6 +21,8 @@ alias grep='grep --color=auto'
 alias h='history |grep'
 alias hexdump='hexdump -C'
 
+alias iotop='\sudo -k -p "[sudo] Starting iotop as root. Password for ${USER}: " iotop'
+
 alias l='git log'
 alias la='ls -A --color=auto'
 alias lg='git log --decorate --all --oneline --graph'
@@ -43,7 +45,7 @@ alias r='reset'
 
 alias s='git status'
 alias screen='mkdir -pv "${HOME}/screen/$(date "+%Y-%m")" && screen -Logfile "${HOME}/screen/$(date "+%Y-%m")/$(date "+%Y-%m-%d %H:%M:%S") screen.log"'
-alias sudo='sudo -k'
+alias sudo='sudo -k -p "[sudo] Password for ${USER}: "'
 
 alias vi='~/.local/bin/run-neovim.sh'
 alias vim='~/.local/bin/run-neovim.sh'
