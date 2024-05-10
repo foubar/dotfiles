@@ -29,6 +29,7 @@ alias lg='git log --decorate --all --oneline --graph'
 alias ll='ls -Flisa --color=auto'
 alias lock='gnome-screensaver-command --lock'
 alias ls='ls --color=auto'
+alias lsd='lsd -Flia'
 alias lt='ls -Flisatr --color=auto'
 alias ltr='ls -Flisat --color=auto'
 
