@@ -9,7 +9,7 @@ curl -O https://dl.google.com/go/${FILENAME}
 HASH="$(sha256sum ${FILENAME} |awk '{print $1}')"
 
 if [ -n "$(curl --silent https://go.dev/dl/ \
-    |grep "filename.*go1.22.3.linux-amd64.tar.gz" -A 5 \
+    |grep "filename.*${FILENAME}" -A 5 \
     |grep "<td><tt>${HASH}</tt></td>")" ]
 then
     if [ ! -d ~/.local/go ]
