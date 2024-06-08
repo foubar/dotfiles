@@ -1,14 +1,18 @@
 [alias]
     amend    = commit --amend --reuse-message=HEAD
+    b        = branches
     branches = branch -a
     c        = clone --recursive
     d        = diff
     ds       = diff --staged
     l        = log
     lg       = log --decorate --all --oneline --graph
+    lg1      = log --decorate --oneline --graph
+    r        = remotes
     remotes  = remote -v
     s        = status
     ss       = status -s
+    t        = tags
     tags     = tag -l
 
 [color]
